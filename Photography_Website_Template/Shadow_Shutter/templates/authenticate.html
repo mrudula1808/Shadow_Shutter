@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Authenticate</title>
+
+    <link rel="stylesheet" href="{% static 'css/authenticate.css' %}">
+    <link rel="icon" href="{% static 'images/icons/android-chrome-192x192.png' %}">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <section class="login">
+        <div class="login_box">
+            <div class="left">
+                <div class="top_link">
+                    <a href="{{ request.META.HTTP_REFERER }}">
+                        Return</a>
+                </div>
+
+                {% if page == 'login' %}
+                <div class="contact">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <h3>USER LOG IN</h3>
+                        <input required type="email" name="loginmail_id" class="logform-input" placeholder="Email">
+                        <input required type="password" name="loginpasswd" class="logform-input" placeholder="Password">
+                        <button id="submit" class="btn btn-outline-dark">LOGIN</button>
+                        <label class="form-label">New User? <a href="{% url 'register' %}">SignUp</a></label>
+                    </form>
+                </div>
+
+                {% elif page == 'adminlogin' %}
+                <div class="contact">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <h3>ADMIN LOG IN</h3>
+                        <input required type="email" name="loginmail_id" class="logform-input" placeholder="Email">
+                        <input required type="password" name="loginpasswd" class="logform-input" placeholder="Password">
+                        <button id="submit" class="btn btn-outline-dark">LOGIN</button>
+                    </form>
+                </div>
+                {% else %}
+                <div class="contact">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <h3>REGISTER</h3>
+                        <input required type="text" name="name" class="form-input" placeholder="Full Name">
+                        <input required type="text" name="username" class="form-input" placeholder="Username">
+                        <input required type="email" name="mail_id" class="form-input" placeholder="Email">
+                        <input required type="password" name="password" id="password" class="form-input" placeholder="Password">
+                        <input required type="password" name="confirm-password" id="confirm-password" class="form-input" placeholder="Confirm Password" onkeyup="check();">
+                        <span id='message'></span>
+                        <button type="submit" id="submit" class="btn btn-outline-dark">REGISTER</button>
+                        <label class="form-label">Already a User? <a href= "{% url 'login' %}" >Login</a></label>
+                    </form>
+                </div>
+
+                {% endif %}
+
+            </div>
+            <div class="right">
+                <img src="{% static 'images\authenticate.gif'%}" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+    <!-- javascript -->
+    <script src="{% static 'js/authenticate.js' %}"></script>
+    <!-- javascript -->
+</body>
+
+</html>

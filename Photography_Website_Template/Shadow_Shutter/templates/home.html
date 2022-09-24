@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shadow Shutter</title>
+    <link rel="icon" href="{% static 'Images\icons\android-chrome-192x192.png' %}">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link rel="stylesheet" href="{% static 'css/splashscreen.css' %}">
+    <!-- css -->
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <!-- Add icon library -->
+
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- fonts -->
+</head>
+
+<body>
+    <!-- splashscreen -->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo"><img src="{% static 'images/splash.gif' %}" alt="logo"></span>
+        </h1>
+    </div>
+    <!-- splashscreen -->
+
+    <!-- navbar -->
+    {% include 'navbar.html' %}
+    <!-- navbar -->
+
+    <!-- cover images -->
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-4 ">
+                <img src="{% static 'images/cover1.jpg' %}" alt="shutter studio" width="100% " height="70%">
+            </div>
+            <div class="col-md-4 ">
+                <img src="{% static 'images/cover2.jpg' %}" alt="shutter studio" width="100% " height="70%">
+            </div>
+            <div class="col-md-4 ">
+                <img src="{% static 'images/cover3.jpg' %}" alt="shutter studio" width="100% " height="70%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container " id="intro">
+        <div class="row">
+            <h1><b>Welcome To Shadow Shutter Studios</b></h1>
+        </div>
+        <div class="row">
+            <p>It is the ability of a photographer to capture an image that evokes an emotion, capturing those instant moments in life to create an emotional response in the mind of the viewer is just a part of what makes our team of photographers the best.</p>
+            <p>Here at Shadow Shutter Studios, we help you capture and relive the best memories in your life.</p>
+            <p>“Photography is a reality so subtle that it becomes more real than reality.”<br> - Alfred Stieglitz</p>
+        </div>
+    </div>
+    <!-- cover images -->
+
+    <!-- about -->
+    <div class="proto-head" id="about">
+        <h2><b>Our Photographers</b></h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="{% static 'images/Tarun.jpg' %}" alt="Tarun" class="img-fluid" id="tarun">
+                <h1 id="Names"><b>Tarun Khiwal</b></h1>
+                <div id="info">
+                    <p>Tarun Khiwal is among India's leading fashion photographers and a true maverick. Recognized and featured internationally, his experimental style and finesse transformed fashion photography in India, and gave it a global edge while
+                        also ushering in a new era of exploration.</p>
+                    <p>His journey with the art form began 10 years ago, and without any formal training, his undying passion and commitment have led him to become one of the world's leading photographers.</p>
+                    <p>The strongest, most defining aspect of Tarun's aesthetic is that he never conformed to the conventional 'rules', but made his own. His visual style is unmatched because it stems from his Indian roots, and yet transcends them to speak
+                        a contemporary language.</p>
+                    <p>Instead of following western trends and masters, he crafted his own rare style by drawing inspiration from his personal treasure of memories and experiences in his own country India; small anecdotes of his childhood years, or places
+                        he'd visited, or celebrations he'd seen, the culture and traditions that influenced him while growing up.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-12">
+                <img src="{% static 'images/Sasha.jpg' %}" alt="Sasha" class="img-fluid" id="sasha">
+                <h1 id="Names"><b>Sasha Jairam</b></h1>
+                <div id="info">
+                    <p>Sasha Jairam is a fashion and advertising photographer. She has created iconic portraits and photographed covers and campaigns for influential fashion houses globally.</p>
+                    <p>Sasha is a strong believer of sustainable living and ethical lifestyle choices, hence onboarded as a Brand Partner and Advisor for Alt Co., a plant based alternative company focused on mindful consumption.</p>
+                    <p>Born in 1996, Sasha was raised in a small town called Shimoga. She is now based out of Mumbai and London. Diploma Graduate: Fashion Media and Communication at Condé Nast College of Fashion & Design, London. </p>
+                    <p>Foundation Programme: Fashion Business at UAL : LCF, London. Short courses: Social media and Fashion Styling at Fashion Institute of Technology, New York.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- about -->
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <h2><b>Contact Us</b></h2>
+    </div>
+    <div class="card-group">
+        <div class="card ">
+            <img src="{% static 'images/phone.gif' %}" class="card-img-top " alt="... ">
+            <div class="card-body ">
+                <h5 class="card-title ">Telephone</h5>
+                <p class="card-text ">Tarun Khiwal : 9987755533 <br>Sasha Jairam : 4556677888</p>
+            </div>
+        </div>
+        <div class="card ">
+            <img src="{% static 'images/mail.gif' %}" class="card-img-top " alt="... ">
+            <div class="card-body ">
+                <h5 class="card-title ">Email</h5>
+                <p class="card-text "> ShadowShutterStudios@localhost.ac.in </p>
+            </div>
+        </div>
+        <div class="card ">
+            <img src="{% static 'images/location.gif' %}" class="card-img-top " alt="... ">
+            <div class="card-body ">
+                <h5 class="card-title ">Location</h5>
+                <p class="card-text ">VHQ2+X94, Kanakapura Rd, near METRO Station, Doddakallasandra, Bikasipura, Bengaluru, Karnataka 560062</p>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- footer -->
+    {% include 'footer.html' %}
+    <!-- footer -->
+
+    <!--javascript link-->
+    <script src="{% static 'js/home.js'%} "></script>
+    <!--javascript link-->
+</body>
+
+</html>

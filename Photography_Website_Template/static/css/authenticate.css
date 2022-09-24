@@ -1,0 +1,158 @@
+/* general */
+
+* {
+    Font-family: 'Montserrat', sans-serif;
+}
+
+
+/* general */
+
+
+/* contanier */
+
+.login {
+    width: 100%;
+    position: relative;
+}
+
+.login_box {
+    width: 65%;
+    height: 80%;
+    top: 5%;
+    margin: 5% auto;
+    border-radius: 2em;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* contanier */
+
+
+/* left side of contanier */
+
+.login_box .left {
+    width: 50%;
+    padding: 2em;
+}
+
+.left .top_link a {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.left .top_link a:hover {
+    opacity: 0.7;
+}
+
+.left .top_link {
+    height: 20px;
+}
+
+.left .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+
+.left h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.left input {
+    border: none;
+    width: 80%;
+    margin: 5% 0%;
+    border-bottom: 0.07em solid #4f30677d;
+    padding: 0.7em 0.9em;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 0.5em;
+}
+
+.left {
+    background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+
+
+/* left side of contanier */
+
+
+/* overriding some form elements */
+
+.form-label {
+    font-size: 0.7em !important;
+    display: block;
+    font-weight: 600 !important;
+}
+
+.form-label>a {
+    text-decoration: none;
+    color: #2b08447d;
+}
+
+.form-label>a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* overriding some form elements */
+
+
+/* right side of contanier */
+
+.login_box .right {
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right>img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+/* right side of contanier */
+
+
+/* button */
+
+#submit {
+    margin: 1.5em auto;
+}
+
+
+/* button */
+
+
+/* media queries */
+
+@media only screen and (max-width: 820px) {
+    .login_box .left {
+        width: 100%;
+    }
+    .login_box .right {
+        width: 0%;
+    }
+}
+
+
+/* media queries */

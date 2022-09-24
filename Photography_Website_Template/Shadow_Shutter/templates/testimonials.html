@@ -1,0 +1,99 @@
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="icon" href="{% static 'Images\icons\android-chrome-192x192.png' %}">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/testimonial.css' %}">
+    <!--CSS-->
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--font-->
+
+</head>
+
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div class="container-test">
+        <div class="board-test">
+            <h2>Testimonials</h2>
+            <!-- <p class="text-light">Some of the fullfilled costomers reviews</p> -->
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <div class="comments">
+                                <b>"</b>Thank you so much for being such an amazing photographer. You made our day go by so seamlessly. These photos are absolutely beautiful, and you were able to capture so many amazing memories from our special day.<b>"</b>
+                            </div>
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                                <a href="#">Emma Conte</a>
+                                <span>Actress</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <div class="comments">
+                                <b>"</b>Thank You so much for getting our photo’s out to us so quickly. They are absolutely beautiful. You managed to capture so much perfectly. Thank you so much for your professionalism, you made the day that much more
+                                relaxed and enjoyable.<b>"</b>
+                            </div>
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                                <a href="#">Olivia Ray</a>
+                                <span>Model</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <div class="comments">
+                                <b>"</b>THANK YOU!!! The photos are absolutely perfect! We could not be more thrilled with how wonderful they have turned out. You are truly a magician! We have no idea how you managed to make the darkest, wettest day in
+                                a century look light and bright and warm… Thank you<b>"</b>
+                            </div>
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                                <a href="#">Linda Louise</a>
+                                <span>Writer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <!-- javascript -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/testimonials.js' %}"></script>
+    <!-- javascript -->
+</body>
+
+</html>

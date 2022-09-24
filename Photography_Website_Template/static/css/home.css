@@ -1,0 +1,208 @@
+/* general */
+
+* {
+    Font-family: 'Montserrat', sans-serif;
+}
+
+
+/* general */
+
+
+/* navbar */
+
+.navbar-brand img {
+    width: 5em;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding: 0 1em;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+    padding: 0 1em;
+    font-weight: bolder;
+}
+
+.navbar-light {
+    background-image: linear-gradient(#d3d3d3, #ffffff);
+}
+
+.dropdown-menu:li {
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown a:hover {
+    display: block;
+    margin-top: 0;
+    color: black;
+    opacity: 0.8;
+}
+
+.dropdown a {
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0 1em;
+    font-weight: bolder;
+    color: black;
+    opacity: 0.6;
+}
+
+
+/* navbar */
+
+
+/* cover images */
+
+.col-md-4 img {
+    height: 100%;
+    max-height: max-content;
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro h1 {
+    margin-bottom: 1.25%;
+    font-size: 2.1em;
+}
+
+
+/* cover images */
+
+
+/* about */
+
+.proto-head,
+.contact,
+.contact h2,
+.proto-head h2 {
+    text-align: center;
+    margin-top: 1.25%;
+    font-size: 1.65em;
+}
+
+.container {
+    margin-top: 2%;
+    font-size: 1.25em;
+}
+
+.container #Names {
+    font-size: 2em;
+}
+
+.container #info {
+    font-size: 1.05em;
+}
+
+#tarun {
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+#sasha {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+
+/* about */
+
+
+/* contact */
+
+.contact {
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-group {
+    margin: 1%;
+}
+
+.card {
+    border-radius: 10%;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.card img {
+    width: 50%;
+    height: 60%;
+    margin-left: 25%;
+}
+
+
+/* contact */
+
+
+/*footer*/
+
+#footer {
+    background-image: linear-gradient(#ffffff, #d3d3d3);
+    display: grid;
+}
+
+#footer .row {
+    text-align: center;
+}
+
+#footer p {
+    font-weight: 550;
+}
+
+
+/*footer*/
+
+
+/*footer-social media buttons*/
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+a i {
+    color: black;
+}
+
+
+/*footer-social media buttons*/
+
+
+/* media queries */
+
+@media only screen and (max-width: 770px) {
+    .col-md-4 {
+        height: 100%;
+        max-height: max-content;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+    #tarun,
+    #sasha {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+/* media queries */

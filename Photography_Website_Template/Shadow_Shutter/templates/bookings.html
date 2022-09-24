@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="icon" href="{% static 'images/icons/android-chrome-192x192.png' %}">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/booking.css' %}">
+    <!-- css -->
+
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- fonts -->
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="name-logo" style="overflow: hidden;">
+            <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}"></a>
+        </div>
+        <div class="main-form">
+            <form name="form1" method="POST">
+                {% csrf_token %}
+                <div class="page">
+                    <div class="field field_v1">
+                        <label for="first-name" class="ha-screen-reader">Name</label>
+                        <input id="first-name" type="text" name="name" class="field__input" placeholder="ex: Ananya" autocomplete="name">
+                        <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Name</span>
+                        </span>
+                    </div>
+                    <div class="field field_v3">
+                        <label for="email" class="ha-screen-reader">E-mail</label>
+                        <input id="email" type="email" name="email" class="field__input" placeholder="ex: ananyabhombore@gmail.com" autocomplete="email">
+                        <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">E-mail</span>
+                        </span>
+                    </div>
+                    <div class="field field_v1">
+                        <label for="first-name" class="ha-screen-reader">Address</label>
+                        <input id="first-name" type="text" name="address" class="field__input" placeholder="ex: MG Road,Bangalore-61">
+                        <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Address</span>
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <div class="center">
+                    <label>Booking:</label>
+                    <section id="first" class="section">
+                        <div class="container">
+                            <input requried type="radio" name="booking" id="radio-1" value="tarun khiwal">
+                            <label for="radio-1"><span class="radio">Tarun Khiwal</span></label>
+                        </div>
+                        <div class="container">
+                            <input requried type="radio" name="booking" id="radio-2" value="sasha jairam">
+                            <label for="radio-2"><span class="radio">Sasha Jairam</span></label>
+                        </div>
+                    </section>
+                </div>
+                <div class="center">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date_picker">
+                </div>
+                <div class="onsetTime">
+                    <label for="time">Onset Time:</label>
+                    <input type="time" name="time">
+                </div>
+                <div class="hoursFor">
+                    <label for="hours">Hours: </label>
+                    <select name="hours" id="hours">
+                        <option value="2">2 hours</option>
+                        <option value="4">4 hours</option>
+                        <option value="6">6 Hours</option>
+                    </select>
+                </div>
+                <p id="outro">We will contact you shortly! Thanks for choosing us.</p>
+                <div class="center">
+                    <input type="submit" class="button-39" name="submit" value="Submit">
+                </div>
+            </form>
+            <br><br>
+        </div>
+    </div>
+    <!-- javascript -->
+    <link rel="script" href="{% static 'js/booking.js' %}">
+    <!-- javascript -->
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <!-- jquery -->
+
+    <script language="javascript">
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+
+        today = yyyy + '-' + mm + '-' + dd;
+        $('#date_picker').attr('min', today);
+    </script>
+</body>
+
+</html>

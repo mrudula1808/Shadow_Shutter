@@ -1,0 +1,14 @@
+/* overriding some home.css classes */
+
+.card {
+    border-radius: 0 !important;
+}
+
+.card>img {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0 !important;
+}
+
+
+/* overriding some home.css classes */
