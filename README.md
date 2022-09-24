@@ -48,9 +48,9 @@ Shadow Shutter studios is a state-of-art Template photography website. Here at S
 
 ## Contributors
 Team Localhost consisting of <br>
-1. <a href="https://www.linkedin.com/in/fozail-ahmed-3297ab236/">Fozail Ahmed </a>
-2. <a href="https://www.linkedin.com/in/ananya-bhombore-674870245/">Ananya Bhombore </a>
-3. <a href="https://www.linkedin.com/in/mrudula-s-prassad-24712a16b/">Mrudala S Prasad </a>
+1.  <a href="https://www.linkedin.com/in/mrudula-s-prassad-24712a16b/">Mrudula S Prasad </a>
+2. <a href="https://www.linkedin.com/in/fozail-ahmed-3297ab236/">Fozail Ahmed </a>
+3. <a href="https://www.linkedin.com/in/ananya-bhombore-674870245/">Ananya Bhombore </a>
 4. <a href="https://www.linkedin.com/in/charan-simha-d-325664239/">Charan Simha </a>
 
 
