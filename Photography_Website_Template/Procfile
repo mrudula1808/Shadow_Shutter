@@ -1,0 +1,1 @@
+web: gunicorn Photography_Website_Template.wsgi --log-file -
